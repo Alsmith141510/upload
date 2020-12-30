@@ -30,7 +30,7 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": ["node_modules/file-drop-element/dist/filedrop.umd.js"]
           },
           "configurations": {
             "production": {
@@ -121,8 +121,16 @@
               "devServerTarget": "upload:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {}
         }
       }
-    }},
-  "defaultProject": "upload"
+    }
+  },
+  "defaultProject": "upload",
+  "cli": {
+    "analytics": false
+  }
 }

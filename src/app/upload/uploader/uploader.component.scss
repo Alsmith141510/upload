@@ -1,0 +1,14 @@
+file-drop {
+  display: block;
+  margin: 2em;
+  padding: 4em;
+  border: 3px dotted black;
+}
+
+file-drop.drop-valid {
+  background-color: green;
+}
+
+file-drop.drop-invalid {
+  background-color: red;
+}

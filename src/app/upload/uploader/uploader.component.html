@@ -1,0 +1,38 @@
+<h3>Uploads</h3>
+
+<file-drop id='dropTarget' class='drop-valid|drop-invalid' multiple accept='image/*'
+  (drop)="onDrop($event)">
+  Drop any images here
+</file-drop>
+
+<file-drop id='dropVideoTarget' class='drop-valid|drop-invalid' multiple accept='video/*'>
+  <!-- (drop)="onDrop($event)"> -->
+   Drop any video here
+ </file-drop>
+
+
+<div *ngFor="let file of imgfiles">
+  <app-upload-task [file]="file" [fileType]="imgType"></app-upload-task>
+</div>
+<div *ngFor="let file of videofiles">
+  <app-upload-task [file]="file" [fileType]="videoType"></app-upload-task>
+</div>
+<!--
+<div class="dropzone"
+     dropzone
+     (hovered)="toggleHover($event)"
+     (dropped)="onDrop($event)"
+     [class.hovering]="isHovering">
+     <h3>AngularFire Drop Zone</h3>
+     <p>Drag and Drop a File</p>
+    <div class="file">
+      <label class="file-label"></label>
+      <input class="file-input" type="file" change="onDrop($event.target.files)">
+    </div>
+    </div>
+
+<h3>Uploads</h3>
+
+<div *ngFor="let file of files">
+  <upload-task [file]="file"></upload-task>
+</div> -->

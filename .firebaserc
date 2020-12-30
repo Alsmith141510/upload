@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "learningapp-a273d": {
+      "hosting": {
+        "upload": [
+          "learningapp-a273d"
+        ]
+      }
+    }
+  }
+}
